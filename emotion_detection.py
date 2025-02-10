@@ -16,3 +16,12 @@ Input json: { "raw_document": { "text": text_to_analyse } }
         return response.json() 
     except requests.exceptions.RequestException as e:
         return {"error": str(e)}
+
+{
+'anger': anger_score,
+'disgust': disgust_score,
+'fear': fear_score,
+'joy': joy_score,
+'sadness': sadness_score,
+'dominant_emotion': '<name of the dominant emotion>'
+}
